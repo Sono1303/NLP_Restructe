@@ -2,9 +2,7 @@
 # Lab 5 Part 3: RNN cho Part-of-Speech Tagging
 
 ## 1. Source code sử dụng cho báo cáo
-- [lab5_rnn_for_pos_tagging.ipynb](../Lab5/part3/lab5_rnn_for_pos_tagging.ipynb): Notebook POS tagging với RNN
-- [pos_tagging_model.pt](../Lab5/part3/pos_tagging_model.pt): Trained model
-- [data/UD_English-EWT/](../Lab3/data/UD_English-EWT/): Dataset sử dụng
+- [notebook/lab5_rnn_for_pos_tagging.ipynb](../notebook/lab5_rnn_for_pos_tagging.ipynb): Notebook POS tagging với RNN
 
 ## 1.1. Dataset sử dụng
 

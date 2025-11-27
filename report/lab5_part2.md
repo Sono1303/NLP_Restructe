@@ -2,8 +2,7 @@
 # Lab 5: Phân loại Văn bản với Mạng Nơ-ron Hồi quy (RNN/LSTM)
 
 ## 1. Source code sử dụng cho báo cáo
-- [lab5_rnn_text_classification.ipynb](../Lab5/part2/lab5_rnn_text_classification.ipynb): Notebook thực nghiệm RNN/LSTM
-- [data/](../Lab5/data/): Các bộ dữ liệu 
+- [notebook/lab5_rnn_text_classification.ipynb](../notebook/lab5_rnn_text_classification.ipynb): Notebook thực nghiệm RNN/LSTM 
 
 ## 2. Mục tiêu Lab
 

@@ -3,9 +3,7 @@
 ## Phần 1: Trực quan hóa và phân tích embedding
 
 ### 1. Source code, dữ liệu, kết quả sử dụng
-- [Lab3/Lab3.ipynb](../Lab3/Lab3.ipynb): Notebook chính trực quan hóa embedding
-- [Lab3/data/glove.6B/](../Lab3/data/glove.6B/): Pre-trained GloVe vectors
-- [Lab3/images/](../Lab3/images/): Hình ảnh trực quan hóa
+- [notebook/lab3_word_embeddings.ipynb](../notebook/lab3_word_embeddings.ipynb): Notebook chính trực quan hóa embedding
 
 ### 1.1. Dataset sử dụng
 

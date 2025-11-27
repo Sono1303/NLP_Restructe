@@ -1,7 +1,7 @@
 # Lab 5: PyTorch Introduction
 
 ## Source code sử dụng cho báo cáo
-- [lab5_pytorch_introduction.ipynb](../Lab5/lab5_pytorch_introduction.ipynb): Notebook thực hành PyTorch cơ bản
+- [notebook/lab5_pytorch_introduction.ipynb](../notebook/lab5_pytorch_introduction.ipynb): Notebook thực hành PyTorch cơ bản
 
 ## Dataset sử dụng
 

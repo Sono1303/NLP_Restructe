@@ -2,9 +2,7 @@
 # Lab 5 Part 4: RNN for Named Entity Recognition
 
 ## 1. Source code sử dụng cho báo cáo
-- [lab5_rnn_for_ner.ipynb](../Lab5/part4/lab5_rnn_for_ner.ipynb): Notebook NER với RNN
-- [best_ner_model.pt](../Lab5/part4/best_ner_model.pt): Trained model
-- [data/conll2003/](../Lab5/part4/data/conll2003/): Dataset sử dụng
+- [notebook/lab5_rnn_for_ner.ipynb](../notebook/lab5_rnn_for_ner.ipynb): Notebook NER với RNN
 
 ## 2. Mục tiêu
 

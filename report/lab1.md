@@ -1,14 +1,13 @@
 # Báo cáo Lab 1 & Lab 2
 
 ## Source code sử dụng trong báo cáo
-- [Lab1/src/core/interfaces.py](../Lab1/src/core/interfaces.py): Interface Tokenizer, Vectorizer
-- [Lab1/src/preprocessing/simple_tokenizer.py](../Lab1/src/preprocessing/simple_tokenizer.py): SimpleTokenizer
-- [Lab1/src/preprocessing/regex_tokenizer.py](../Lab1/src/preprocessing/regex_tokenizer.py): RegexTokenizer
-- [Lab1/src/representations/count_vectorizer.py](../Lab1/src/representations/count_vectorizer.py): CountVectorizer
-- [Lab1/src/core/dataset_loaders.py](../Lab1/src/core/dataset_loaders.py): Hàm load dữ liệu
-- [Lab1/test/main.py](../Lab1/test/main.py): Test tokenizer
-- [Lab1/test/lab2_test.py](../Lab1/test/lab2_test.py): Test CountVectorizer
-- [Lab1/UD_English-EWT/](../Lab1/UD_English-EWT/): Dataset tiếng Anh
+- [src/interfaces.py](../src/interfaces.py): Interface Tokenizer, Vectorizer
+- [src/preprocessing/simple_tokenizer.py](../src/preprocessing/simple_tokenizer.py): SimpleTokenizer
+- [src/preprocessing/regex_tokenizer.py](../src/preprocessing/regex_tokenizer.py): RegexTokenizer
+- [src/representations/count_vectorizer.py](../src/representations/count_vectorizer.py): CountVectorizer
+- [src/dataset_loaders.py](../src/dataset_loaders.py): Hàm load dữ liệu
+- [test/main.py](../test/main.py): Test tokenizer
+- [test/lab2_test.py](../test/lab2_test.py): Test CountVectorizer
 
 ## Dataset sử dụng
 

@@ -4,11 +4,10 @@
 ## Phần 2: Word Embeddings với Word2Vec
 
 ### 1. Source code, dữ liệu, kết quả sử dụng
-- [Lab3/test/lab4_test.py](../Lab3/test/lab4_test.py): Test pre-trained GloVe
-- [Lab3/test/lab4_embedding_training_demo.py](../Lab3/test/lab4_embedding_training_demo.py): Custom Word2Vec training
-- [Lab3/test/lab4_spark_word2vec_demo.py](../Lab3/test/lab4_spark_word2vec_demo.py): Spark MLlib training
-- [Lab3/results/](../Lab3/results/): Kết quả test, training
-- [Lab3/data/](../Lab3/data/): Dữ liệu GloVe, UD English-EWT, C4
+- [test/lab4_test.py](../test/lab4_test.py): Test pre-trained GloVe
+- [test/lab4_embedding_training_demo.py](../test/lab4_embedding_training_demo.py): Custom Word2Vec training
+- [test/lab4_spark_word2vec_demo.py](../test/lab4_spark_word2vec_demo.py): Spark MLlib training
+- [notebook/lab3_word_embeddings.ipynb](../notebook/lab3_word_embeddings.ipynb): Trực quan hóa embeddings
 
 ### 1.1. Datasets sử dụng
 

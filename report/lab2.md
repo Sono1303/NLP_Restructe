@@ -1,11 +1,8 @@
 # Báo cáo Bài tập Lab2 - Spark NLP Pipeline
 
 ## File/folder code sử dụng trong báo cáo
-- [Lab2/spark_labs/src/main/scala/com/lhson/spark/Lab17_NLPPipeline.scala](../Lab2/spark_labs/src/main/scala/com/lhson/spark/Lab17_NLPPipeline.scala): Source code pipeline chính
-- [Lab2/spark_labs/build.sbt](../Lab2/spark_labs/build.sbt): Cấu hình project và dependencies
-- [Lab2/spark_labs/data/](../Lab2/spark_labs/data/): Dataset C4 Common Crawl
-- [Lab2/spark_labs/log/](../Lab2/spark_labs/log/): Log kết quả
-- [Lab2/spark_labs/results/](../Lab2/spark_labs/results/): File kết quả xử lý
+- [spark_labs/src/main/scala/com/lhson/spark/Lab17_NLPPipeline.scala](../spark_labs/src/main/scala/com/lhson/spark/Lab17_NLPPipeline.scala): Source code pipeline chính
+- [spark_labs/build.sbt](../spark_labs/build.sbt): Cấu hình project và dependencies
 
 ## Dataset sử dụng
 

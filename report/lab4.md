@@ -1,15 +1,13 @@
 # Báo cáo Lab4: Text Classification & Sentiment Analysis
 
 ## 1. Source code sử dụng cho báo cáo
-- [src/models/text_classifier.py](../Lab4/src/models/text_classifier.py): Classifier Scikit-learn
-- [test/lab5_test.py](../Lab4/test/lab5_test.py): Kiểm thử TextClassifier
-- [test/lab5_spark_sentiment_analysis.py](../Lab4/test/lab5_spark_sentiment_analysis.py): Pipeline Spark ML cơ bản
-- [test/lab5_spark_sentiment_analysis_app_1.py](../Lab4/test/lab5_spark_sentiment_analysis_app_1.py): Pipeline cải tiến preprocessing
-- [test/lab5_spark_sentiment_analysis_app_2.py](../Lab4/test/lab5_spark_sentiment_analysis_app_2.py): Pipeline embedding Word2Vec
-- [test/lab5_spark_sentiment_analysis_app_3.py](../Lab4/test/lab5_spark_sentiment_analysis_app_3.py): Pipeline mô hình phức tạp
-- [test/lab5_spark_sentiment_analysis_advanced.py](../Lab4/test/lab5_spark_sentiment_analysis_advanced.py): Pipeline kết hợp cải tiến
-- [Lab4/results/](../Lab4/results/): Kết quả test, training
-- [Lab4/data/](../Lab4/data/): Dữ liệu cảm xúc
+- [src/models/text_classifier.py](../src/models/text_classifier.py): Classifier Scikit-learn
+- [test/lab5_test.py](../test/lab5_test.py): Kiểm thử TextClassifier
+- [test/lab5_spark_sentiment_analysis.py](../test/lab5_spark_sentiment_analysis.py): Pipeline Spark ML cơ bản
+- [test/lab5_spark_sentiment_analysis_app_1.py](../test/lab5_spark_sentiment_analysis_app_1.py): Pipeline cải tiến preprocessing
+- [test/lab5_spark_sentiment_analysis_app_2.py](../test/lab5_spark_sentiment_analysis_app_2.py): Pipeline embedding Word2Vec
+- [test/lab5_spark_sentiment_analysis_app_3.py](../test/lab5_spark_sentiment_analysis_app_3.py): Pipeline mô hình phức tạp
+- [test/lab5_spark_sentiment_analysis_advanced.py](../test/lab5_spark_sentiment_analysis_advanced.py): Pipeline kết hợp cải tiến
 
 ## 1.1. Dataset sử dụng
 
