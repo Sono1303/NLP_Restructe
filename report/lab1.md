@@ -30,8 +30,7 @@
 
 **Nguồn**: https://universaldependencies.org/ - https://github.com/UniversalDependencies/UD_English-EWT
 
-**Lưu ý**: Dataset không được commit lên GitHub, chỉ lưu local. Xem [data/README.md](../data/README.md) để biết cách tải.
-
+**Lưu ý**: Dataset không được commit lên GitHub, chỉ lưu local. Xem [data/README.md](../data/README.md) để biết thêm chi tiết.
 ## 1. Mô tả công việc
 
 ### Lab 1
