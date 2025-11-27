@@ -27,11 +27,6 @@ Repository này sử dụng nhiều datasets công khai cho các bài lab NLP. D
 
 **Cách tải**:
 ```bash
-cd Lab1/UD_English-EWT
-# hoặc
-cd Lab3/data/UD_English-EWT
-
-# Tải từ GitHub
 git clone https://github.com/UniversalDependencies/UD_English-EWT.git
 ```
 
@@ -59,7 +54,6 @@ git clone https://github.com/UniversalDependencies/UD_English-EWT.git
 
 **Cách tải**:
 ```bash
-cd Lab3/data
 wget http://nlp.stanford.edu/data/glove.6B.zip
 unzip glove.6B.zip -d glove.6B/
 ```
@@ -88,7 +82,6 @@ unzip glove.6B.zip -d glove.6B/
 
 **Cách tải**:
 ```bash
-cd Lab3/data
 # Download subset qua Hugging Face datasets library
 ```
 
@@ -115,7 +108,6 @@ cd Lab3/data
 
 **Cách tải**:
 ```bash
-cd Lab5/data/hwu
 # Download từ GitHub repository
 ```
 
@@ -148,7 +140,6 @@ cd Lab5/data/hwu
 
 **Cách tải**:
 ```bash
-cd Lab5/part4/data/conll2003
 # Sử dụng Hugging Face datasets library
 ```
 
@@ -182,31 +173,6 @@ cd Lab5/part4/data/conll2003
 
 ---
 
-## Cấu trúc Thư mục Data trong các Lab
-
-```
-Lab1/
-  └── UD_English-EWT/          # Universal Dependencies dataset
-
-Lab3/
-  └── data/
-      ├── glove.6B/             # GloVe vectors
-      ├── c4-train-*.json       # C4 subset
-      └── UD_English-EWT/       # For Word2Vec training
-
-Lab4/
-  └── data/
-      ├── sentiments.csv
-      └── twitter-financial-news-sentiment/
-
-Lab5/
-  ├── data/
-  │   ├── hwu/                  # Intent classification
-  │   └── nlu.csv/
-  └── part4/data/
-      └── conll2003/            # NER dataset
-```
-
 ## Lưu ý về .gitignore
 
 Các file sau đã được thêm vào `.gitignore`:
@@ -217,48 +183,6 @@ Các file sau đã được thêm vào `.gitignore`:
 - `*.vec`
 - `*.bin`
 - Model files: `*.pt`, `*.pth`, `*.model`
-
-## Hướng dẫn Tải tất cả Datasets
-
-Tạo script để tải tự động:
-
-```bash
-# Tạo file download_datasets.sh
-#!/bin/bash
-
-# Lab1 - UD English-EWT
-cd Lab1
-git clone https://github.com/UniversalDependencies/UD_English-EWT.git
-
-# Lab3 - GloVe
-cd ../Lab3/data
-wget http://nlp.stanford.edu/data/glove.6B.zip
-unzip glove.6B.zip -d glove.6B/
-
-# Lab5 - Datasets qua Hugging Face
-pip install datasets
-python -c "
-from datasets import load_dataset
-# HWU-64
-hwu = load_dataset('SetFit/hwu_64')
-# CoNLL-2003
-conll = load_dataset('conll2003')
-"
-
-echo "All datasets downloaded!"
-```
-
-## Kích thước Ước tính
-
-| Dataset | Size | Files |
-|---------|------|-------|
-| UD English-EWT | ~20 MB | 3 files |
-| GloVe 6B | ~822 MB | 4 files |
-| C4 subset | ~100 MB | 1 file |
-| HWU-64 | ~2 MB | 3 files |
-| CoNLL-2003 | ~5 MB | 3 files |
-| Sentiment datasets | ~50 MB | Multiple |
-| **Total** | **~1 GB** | |
 
 ## Trích dẫn
 
