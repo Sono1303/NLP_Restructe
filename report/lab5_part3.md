@@ -2,7 +2,25 @@
 # Lab 5 Part 3: RNN cho Part-of-Speech Tagging
 
 ## 1. Source code sử dụng cho báo cáo
-- [notebook/lab5_rnn_for_pos_tagging.ipynb](../notebook/lab5_rnn_for_pos_tagging.ipynb): Notebook POS tagging với RNN
+- [lab5_rnn_for_pos_tagging.ipynb](../Lab5/part3/lab5_rnn_for_pos_tagging.ipynb): Notebook POS tagging với RNN
+- [pos_tagging_model.pt](../Lab5/part3/pos_tagging_model.pt): Trained model
+- [data/UD_English-EWT/](../Lab3/data/UD_English-EWT/): Dataset sử dụng
+
+## 1.1. Dataset sử dụng
+
+**Tên dataset**: Universal Dependencies English-EWT (UD_English-EWT)
+
+**Mô tả**: Corpus tiếng Anh được gán nhãn ngữ pháp (POS tags, dependency parsing).
+
+**Cấu trúc dữ liệu**:
+- **Format**: CoNLL-U
+- **Số lượng**: 12,544 câu (train), 2,001 câu (dev), 2,077 câu (test)
+- **Các cột chính**: ID, FORM (từ), LEMMA, UPOS (Universal POS tag), XPOS, HEAD, DEPREL
+- **Số POS tags**: 17 loại (NOUN, VERB, PRON, ADJ, ADV, ADP, DET, AUX, PROPN, PART, CCONJ, SCONJ, NUM, PUNCT, INTJ, SYM, X)
+
+**Nguồn**: https://universaldependencies.org/
+
+**Lưu ý**: Dataset không được commit lên GitHub. Xem [data/README.md](../data/README.md).
 
 ## 2. Thông tin chung
 
@@ -64,7 +82,8 @@
 - Có dấu hiệu overfitting nhẹ (train loss tiếp tục giảm trong khi dev loss tăng nhẹ từ epoch 8-9)
 - Mô hình đạt performance tốt nhất ở epoch cuối cùng
 
-*Biểu đồ Loss và Accuracy được tạo ra trong notebook*
+![Training History](../Lab5/part3/image/training_history.png)
+*Biểu đồ Loss và Accuracy qua các epoch*
 
 ### Độ chính xác theo từng POS tag (Test set)
 

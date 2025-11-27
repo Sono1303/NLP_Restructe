@@ -1,19 +1,32 @@
 # Lab 6: Introduction to Transformers
 
-## 1. Source code sử dụng cho báo cáo
-- [notebook/lab6_intro_transformers.ipynb](../notebook/lab6_intro_transformers.ipynb): Notebook giới thiệu Transformers
-
-## 2. Giới thiệu
+## 1. Giới thiệu
 
 Lab này giới thiệu về kiến trúc Transformer và cách sử dụng thư viện Transformers của Hugging Face để thực hiện các tác vụ NLP cơ bản.
 
-## 3. Cài đặt thư viện cần thiết
+## 1.1. Dataset sử dụng
+
+**Tên dataset**: Demo sentences (Synthetic data)
+
+**Mô tả**: Lab này sử dụng các câu demo được tạo thủ công để minh họa khả năng của các mô hình Transformer pre-trained.
+
+**Cấu trúc dữ liệu**:
+- **Masked Language Modeling**: Câu có token [MASK] cần điền
+- **Text Generation**: Câu mồi để sinh tiếp văn bản
+- **Sentence Embedding**: Câu mẫu để tính vector biểu diễn
+- **Models sử dụng**: 
+  - BERT (bert-base-uncased) - Encoder-only
+  - GPT-2 (gpt2) - Decoder-only
+
+**Lưu ý**: Không cần tải dataset external, tất cả được tạo trong code demo.
+
+## 2. Cài đặt thư viện cần thiết
 
 ```python
 !pip install transformers torch
 ```
 
-## 4. Bài tập thực hành
+## 3. Bài tập thực hành
 
 ### Bài 1: Khôi phục Masked Token (Masked Language Modeling)
 
@@ -121,7 +134,7 @@ print('Kích thước của vector:', sentence_embedding.shape)
 
 2. `attention_mask` giúp loại bỏ ảnh hưởng của các **token padding** khi tính trung bình. Khi xử lý nhiều câu cùng lúc (batch), các câu ngắn sẽ được thêm padding để cùng độ dài. Nếu không dùng attention_mask, các token padding sẽ được tính vào trung bình, làm vector biểu diễn không chính xác. Attention_mask đảm bảo chỉ các token thực sự của câu được tính, cho kết quả đúng ngữ nghĩa.
 
-## 5. Kết luận
+## 4. Kết luận
 
 Trong lab này, chúng ta đã:
 - Tìm hiểu về kiến trúc Transformer với 3 loại chính: Encoder-only (BERT), Decoder-only (GPT), và Encoder-Decoder
@@ -129,7 +142,7 @@ Trong lab này, chúng ta đã:
 - Hiểu cách tính toán sentence embeddings với Mean Pooling
 - So sánh ưu điểm của từng kiến trúc cho các tác vụ NLP khác nhau
 
-## 6. Tài liệu tham khảo
+## 5. Tài liệu tham khảo
 
 - [Hugging Face Transformers Documentation](https://huggingface.co/docs/transformers/)
 - [BERT Paper: Pre-training of Deep Bidirectional Transformers](https://arxiv.org/abs/1810.04805)

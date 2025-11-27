@@ -3,7 +3,27 @@
 ## Phần 1: Trực quan hóa và phân tích embedding
 
 ### 1. Source code, dữ liệu, kết quả sử dụng
-- [notebook/lab3_word_embeddings.ipynb](../notebook/lab3_word_embeddings.ipynb): Notebook chính trực quan hóa embedding
+- [Lab3/Lab3.ipynb](../Lab3/Lab3.ipynb): Notebook chính trực quan hóa embedding
+- [Lab3/data/glove.6B/](../Lab3/data/glove.6B/): Pre-trained GloVe vectors
+- [Lab3/images/](../Lab3/images/): Hình ảnh trực quan hóa
+
+### 1.1. Dataset sử dụng
+
+**Tên dataset**: GloVe Pre-trained Word Vectors
+
+**Mô tả**: Pre-trained word embeddings được huấn luyện trên 6 tỷ tokens từ Wikipedia 2014 + Gigaword 5.
+
+**Cấu trúc dữ liệu**:
+- **Format**: Text file, mỗi dòng gồm: `word` + `vector values` (space-separated)
+- **Số lượng**: 400,000 từ vựng
+- **Kích thước vector**: 50d, 100d, 200d, 300d (sử dụng 100d)
+- **Kiểu dữ liệu**: String (word) + Float values (vector)
+
+**Nguồn**: https://nlp.stanford.edu/projects/glove/
+
+**File sử dụng**: `glove.6B.100d.txt` (~331 MB)
+
+**Lưu ý**: Dataset không được commit lên GitHub. Xem [data/README.md](../data/README.md) để tải.
 
 ### 2. Các bước thực hiện
 1. Load pre-trained GloVe vectors bằng Gensim
@@ -18,7 +38,13 @@
 - Đảm bảo file GloVe vectors đã được giải nén vào đúng thư mục
 
 ### 4. Hình ảnh trực quan hóa embedding
-*Các hình ảnh trực quan hóa được tạo ra trong notebook lab3_word_embeddings.ipynb*
+#### 4.1 PCA 2D từ GloVe
+![GloVe PCA 2D](../Lab3/images/glove_pca_2d.png)
+*Hình 1: Trực quan hóa PCA 2D của embedding GloVe*
+
+#### 4.2 Word Representation using PCA
+![Word Representation using PCA](../Lab3/images/word_representation_using_pca.png)
+*Hình 2: Biểu diễn các từ bằng PCA, vector arrows từ gốc tọa độ*
 
 
 ### 5. Nhận xét về độ tương đồng và các từ đồng nghĩa

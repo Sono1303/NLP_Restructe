@@ -13,7 +13,6 @@ Repository này chứa các bài thực hành môn Xử lý Ngôn ngữ Tự nhi
 ├── test/               # Test scripts và unit tests
 ├── data/               # Metadata và mô tả datasets (KHÔNG chứa dataset thực tế)
 ├── report/             # Báo cáo chi tiết cho từng lab
-├── Lab1-Lab6/          # Thư mục gốc chứa code, data, results của từng lab
 ├── README.md           # File này
 ├── .gitignore          # Loại bỏ files không cần thiết
 ```

@@ -1,13 +1,43 @@
 # Báo cáo Lab4: Text Classification & Sentiment Analysis
 
 ## 1. Source code sử dụng cho báo cáo
-- [src/models/text_classifier.py](../src/models/text_classifier.py): Classifier Scikit-learn
-- [test/lab5_test.py](../test/lab5_test.py): Kiểm thử TextClassifier
-- [test/lab5_spark_sentiment_analysis.py](../test/lab5_spark_sentiment_analysis.py): Pipeline Spark ML cơ bản
-- [test/lab5_spark_sentiment_analysis_app_1.py](../test/lab5_spark_sentiment_analysis_app_1.py): Pipeline cải tiến preprocessing
-- [test/lab5_spark_sentiment_analysis_app_2.py](../test/lab5_spark_sentiment_analysis_app_2.py): Pipeline embedding Word2Vec
-- [test/lab5_spark_sentiment_analysis_app_3.py](../test/lab5_spark_sentiment_analysis_app_3.py): Pipeline mô hình phức tạp
-- [test/lab5_spark_sentiment_analysis_advanced.py](../test/lab5_spark_sentiment_analysis_advanced.py): Pipeline kết hợp cải tiến
+- [src/models/text_classifier.py](../Lab4/src/models/text_classifier.py): Classifier Scikit-learn
+- [test/lab5_test.py](../Lab4/test/lab5_test.py): Kiểm thử TextClassifier
+- [test/lab5_spark_sentiment_analysis.py](../Lab4/test/lab5_spark_sentiment_analysis.py): Pipeline Spark ML cơ bản
+- [test/lab5_spark_sentiment_analysis_app_1.py](../Lab4/test/lab5_spark_sentiment_analysis_app_1.py): Pipeline cải tiến preprocessing
+- [test/lab5_spark_sentiment_analysis_app_2.py](../Lab4/test/lab5_spark_sentiment_analysis_app_2.py): Pipeline embedding Word2Vec
+- [test/lab5_spark_sentiment_analysis_app_3.py](../Lab4/test/lab5_spark_sentiment_analysis_app_3.py): Pipeline mô hình phức tạp
+- [test/lab5_spark_sentiment_analysis_advanced.py](../Lab4/test/lab5_spark_sentiment_analysis_advanced.py): Pipeline kết hợp cải tiến
+- [Lab4/results/](../Lab4/results/): Kết quả test, training
+- [Lab4/data/](../Lab4/data/): Dữ liệu cảm xúc
+
+## 1.1. Dataset sử dụng
+
+**Tên dataset 1**: Twitter Financial News Sentiment
+
+**Mô tả**: Dataset chứa tweets về tin tức tài chính được gán nhãn cảm xúc.
+
+**Cấu trúc dữ liệu**:
+- **Format**: CSV
+- **Số lượng**: ~11,932 tweets
+- **Các cột**:
+  - `text`: Nội dung tweet (string)
+  - `label`: Nhãn cảm xúc - Negative/Neutral/Positive (string)
+- **Phân bố**: Negative (~2,106), Neutral (~5,040), Positive (~4,786)
+
+**Nguồn**: Kaggle - Twitter Financial News Sentiment Dataset
+
+**Tên dataset 2**: Sentiments.csv
+
+**Mô tả**: Dataset cảm xúc đơn giản cho classification.
+
+**Cấu trúc dữ liệu**:
+- **Format**: CSV
+- **Các cột**:
+  - `text`: Văn bản (string)
+  - `sentiment`: Nhãn cảm xúc (string/integer)
+
+**Lưu ý**: Datasets không được commit lên GitHub. Xem [data/README.md](../data/README.md) để biết chi tiết.
 
 ### 2. Giải thích chi tiết các bước triển khai
 

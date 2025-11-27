@@ -4,9 +4,30 @@
 ## Phần 2: Word Embeddings với Word2Vec
 
 ### 1. Source code, dữ liệu, kết quả sử dụng
-- [test/lab4_test.py](../test/lab4_test.py): Test pre-trained GloVe
-- [test/lab4_embedding_training_demo.py](../test/lab4_embedding_training_demo.py): Custom Word2Vec training
-- [test/lab4_spark_word2vec_demo.py](../test/lab4_spark_word2vec_demo.py): Spark MLlib training
+- [Lab3/test/lab4_test.py](../Lab3/test/lab4_test.py): Test pre-trained GloVe
+- [Lab3/test/lab4_embedding_training_demo.py](../Lab3/test/lab4_embedding_training_demo.py): Custom Word2Vec training
+- [Lab3/test/lab4_spark_word2vec_demo.py](../Lab3/test/lab4_spark_word2vec_demo.py): Spark MLlib training
+- [Lab3/results/](../Lab3/results/): Kết quả test, training
+- [Lab3/data/](../Lab3/data/): Dữ liệu GloVe, UD English-EWT, C4
+
+### 1.1. Datasets sử dụng
+
+**Dataset 1**: GloVe Pre-trained Vectors (giống Lab 3 Part 1)
+- **File**: `glove.6B.300d.txt`, `wiki-news-300d-1M-subword.vec`
+- **Kích thước vector**: 300d
+- Xem [data/README.md](../data/README.md) để biết chi tiết
+
+**Dataset 2**: UD English-EWT (training Word2Vec)
+- **Format**: CoNLL-U
+- **Số lượng**: ~12,544 câu (train set)
+- Sử dụng cho custom Word2Vec training
+
+**Dataset 3**: C4 Subset (Spark Word2Vec)
+- **Format**: JSON
+- **Số lượng**: 30,000 documents
+- Sử dụng cho Spark MLlib Word2Vec training
+
+**Lưu ý**: Tất cả datasets không được commit lên GitHub. Xem [data/README.md](../data/README.md).
 
 ### 2. Yêu cầu hệ thống
 - Python 3.8+
@@ -23,22 +44,26 @@ pip install pyspark  # Cho phần Spark
 
 #### 4.1 Pre-trained Model Test
 ```bash
+cd Lab3
 python test/lab4_test.py
 ```
+**Output**: `results/lab4_test_output.txt`
 
 #### 4.2 Custom Word2Vec Training
 ```bash
 python test/lab4_embedding_training_demo.py
 ```
+**Output**: `results/lab4_training_demo_output.txt`
 
 #### 4.3 Spark MLlib Training
 ```bash
 python test/lab4_spark_word2vec_demo.py
 ```
+**Output**: `results/lab4_spark_word2vec_output.txt`
 
 #### 4.4 Visualization (Jupyter Notebook)
 ```bash
-jupyter notebook notebook/lab3_word_embeddings.ipynb
+jupyter notebook Lab3.ipynb
 ```
 Chạy tất cả cells để xem trực quan hóa PCA và phân tích word clusters.
 

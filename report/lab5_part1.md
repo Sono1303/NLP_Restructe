@@ -1,7 +1,20 @@
 # Lab 5: PyTorch Introduction
 
 ## Source code sử dụng cho báo cáo
-- [notebook/lab5_pytorch_introduction.ipynb](../notebook/lab5_pytorch_introduction.ipynb): Notebook thực hành PyTorch cơ bản
+- [lab5_pytorch_introduction.ipynb](../Lab5/lab5_pytorch_introduction.ipynb): Notebook thực hành PyTorch cơ bản
+
+## Dataset sử dụng
+
+**Tên dataset**: Synthetic/Demo datasets
+
+**Mô tả**: Lab này sử dụng dữ liệu tổng hợp/demo được tạo trực tiếp trong code để minh họa các khái niệm PyTorch cơ bản.
+
+**Cấu trúc dữ liệu**:
+- **Tensor demos**: Các tensor nhỏ được tầo thủ công
+- **Linear Regression**: 100 điểm dữ liệu synthetic (x, y)
+- **Classification**: Iris dataset từ scikit-learn (150 samples, 4 features, 3 classes)
+
+**Lưu ý**: Không cần tải dataset external, tất cả được tạo trong notebook.
 
 ## Phần 1: Khám phá Tensor
 
