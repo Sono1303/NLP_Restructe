@@ -138,11 +138,6 @@ Tất cả báo cáo chi tiết cho từng lab được lưu trong thư mục [r
 - [GloVe: Global Vectors](https://nlp.stanford.edu/projects/glove/)
 - [CoNLL-2003 NER Dataset](https://www.clips.uantwerpen.be/conll2003/ner/)
 
-## Tác giả
-
-- **Sono1303**
-- Repository: [NLP](https://github.com/Sono1303/NLP)
-
 ## Cập nhật
 
 - Tuần 12/2025: Tái cấu trúc repository theo chuẩn, hoàn thiện báo cáo Lab 1-6
@@ -150,5 +145,3 @@ Tất cả báo cáo chi tiết cho từng lab được lưu trong thư mục [r
 - Tuần 10/2025: Lab 4 (Text Classification & Sentiment Analysis)
 
 ---
-
-**Lưu ý**: Repository này được tổ chức theo yêu cầu của môn học. Xem [more.md](more.md) để biết thêm chi tiết về cấu trúc và yêu cầu.
