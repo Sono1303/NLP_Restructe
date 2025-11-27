@@ -19,48 +19,51 @@ Repository này chứa các bài thực hành môn Xử lý Ngôn ngữ Tự nhi
 
 ## Danh sách Labs
 
-### Lab 1: Preprocessing và Dataset Loading
-- **Mô tả**: Xử lý dữ liệu văn bản, tokenization, stemming, lemmatization
+### Lab 1 & 2: Preprocessing và Vectorization
+- **Mô tả**: Xử lý dữ liệu văn bản, tokenization, stemming, lemmatization, CountVectorizer
 - **Dataset**: Universal Dependencies English-EWT
-- **Báo cáo**: [Lab1_report.md](report/Lab1_report.md)
-- **Code**: [Lab1/](Lab1/)
+- **Báo cáo**: [lab1.md](report/lab1.md)
+- **Code**: [src/preprocessing/](src/preprocessing/), [src/representations/](src/representations/)
 
-### Lab 2: Spark MLlib và Xử lý Dữ liệu Lớn
+### Lab 2: Spark MLlib và NLP Pipeline
 - **Mô tả**: Sử dụng Apache Spark cho xử lý NLP trên dữ liệu lớn
 - **Technologies**: Scala, Spark MLlib
-- **Báo cáo**: [Lab2_report.md](report/Lab2_report.md)
-- **Code**: [Lab2/spark_labs/](Lab2/spark_labs/)
+- **Báo cáo**: [lab2.md](report/lab2.md)
+- **Code**: [spark_labs/](spark_labs/)
 
 ### Lab 3: Word Embeddings
 - **Phần 1**: Trực quan hóa và phân tích embedding
-  - Báo cáo: [Lab3_part1_report.md](report/Lab3_part1_report.md)
+  - Báo cáo: [lab3_part1.md](report/lab3_part1.md)
 - **Phần 2**: Word2Vec và training embeddings
-  - Báo cáo: [Lab3_part2_report.md](report/Lab3_part2_report.md)
+  - Báo cáo: [lab3_part2.md](report/lab3_part2.md)
 - **Datasets**: GloVe, UD English-EWT, C4
-- **Code**: [Lab3/](Lab3/)
+- **Code**: [notebook/lab3_word_embeddings.ipynb](notebook/lab3_word_embeddings.ipynb), [test/lab4_*.py](test/)
 
 ### Lab 4: Text Classification & Sentiment Analysis
 - **Mô tả**: Phân loại văn bản và phân tích cảm xúc với Spark MLlib
 - **Models**: Logistic Regression, Naive Bayes, GBT, Neural Networks
-- **Báo cáo**: [Lab4_report.md](report/Lab4_report.md)
-- **Code**: [Lab4/](Lab4/)
+- **Báo cáo**: [lab4.md](report/lab4.md)
+- **Code**: [src/models/text_classifier.py](src/models/text_classifier.py), [test/lab5_*.py](test/)
 
 ### Lab 5: RNN và Deep Learning cho NLP
 - **Phần 1**: PyTorch Introduction
-  - Báo cáo: [Lab5_part1_report.md](report/Lab5_part1_report.md)
+  - Báo cáo: [lab5_part1.md](report/lab5_part1.md)
+  - Notebook: [lab5_pytorch_introduction.ipynb](notebook/lab5_pytorch_introduction.ipynb)
 - **Phần 2**: RNN cho Text Classification
-  - Báo cáo: [Lab5_part2_report.md](report/Lab5_part2_report.md)
+  - Báo cáo: [lab5_part2.md](report/lab5_part2.md)
+  - Notebook: [lab5_rnn_text_classification.ipynb](notebook/lab5_rnn_text_classification.ipynb)
 - **Phần 3**: RNN cho POS Tagging
-  - Báo cáo: [Lab5_part3_report.md](report/Lab5_part3_report.md)
+  - Báo cáo: [lab5_part3.md](report/lab5_part3.md)
+  - Notebook: [lab5_rnn_for_pos_tagging.ipynb](notebook/lab5_rnn_for_pos_tagging.ipynb)
 - **Phần 4**: RNN cho Named Entity Recognition (NER)
-  - Báo cáo: [Lab5_part4_report.md](report/Lab5_part4_report.md)
+  - Báo cáo: [lab5_part4.md](report/lab5_part4.md)
+  - Notebook: [lab5_rnn_for_ner.ipynb](notebook/lab5_rnn_for_ner.ipynb)
 - **Datasets**: HWU-64, UD English-EWT, CoNLL-2003
-- **Code**: [Lab5/](Lab5/)
 
 ### Lab 6: Transformers và Attention Mechanism
-- **Mô tả**: Giới thiệu về Transformer architecture và attention
-- **Báo cáo**: [Lab6/part1/](Lab6/part1/)
-- **Code**: [Lab6/](Lab6/)
+- **Mô tả**: Giới thiệu về Transformer architecture và Hugging Face
+- **Báo cáo**: [lab6.md](report/lab6.md)
+- **Notebook**: [lab6_intro_transformers.ipynb](notebook/lab6_intro_transformers.ipynb)
 
 ## Technologies & Libraries
 
@@ -94,23 +97,44 @@ pip install -r requirements.txt
 
 ### Chạy các Lab
 
-**Lab 1-3** (Python):
+**Lab 1 (Python)**:
 ```bash
-cd Lab1  # hoặc Lab3
 python test/main.py
+python test/lab2_test.py
 ```
 
-**Lab 2** (Spark/Scala):
+**Lab 2 (Spark/Scala)**:
 ```bash
-cd Lab2/spark_labs
-sbt run
+cd spark_labs
+sbt compile
+sbt "runMain com.lhson.spark.Lab17_NLPPipeline"
 ```
 
-**Lab 4-5** (PyTorch):
+**Lab 3 (Word Embeddings)**:
 ```bash
-cd Lab4  # hoặc Lab5
+python test/lab4_test.py
+python test/lab4_embedding_training_demo.py
+python test/lab4_spark_word2vec_demo.py
+jupyter notebook notebook/lab3_word_embeddings.ipynb
+```
+
+**Lab 4 (Text Classification)**:
+```bash
 python test/lab5_test.py
-jupyter notebook  # Cho các notebooks
+python test/lab5_spark_sentiment_analysis.py
+```
+
+**Lab 5 (RNN/LSTM - PyTorch)**:
+```bash
+jupyter notebook notebook/lab5_pytorch_introduction.ipynb
+jupyter notebook notebook/lab5_rnn_text_classification.ipynb
+jupyter notebook notebook/lab5_rnn_for_pos_tagging.ipynb
+jupyter notebook notebook/lab5_rnn_for_ner.ipynb
+```
+
+**Lab 6 (Transformers)**:
+```bash
+jupyter notebook notebook/lab6_intro_transformers.ipynb
 ```
 
 ## Báo cáo
