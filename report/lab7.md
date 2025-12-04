@@ -3,19 +3,9 @@
 ## Source code sử dụng cho báo cáo
 - [notebook/lab7_dependency_parsing.ipynb](../notebook/lab7_dependency_parsing.ipynb): Notebook thực hành Dependency Parsing với spaCy
 
-## Mục tiêu
-
-Sau buổi thực hành này, bạn sẽ có khả năng:
-1. Sử dụng thư viện **spaCy** để thực hiện phân tích cú pháp phụ thuộc cho một câu.
-2. Trực quan hóa cây phụ thuộc để hiểu rõ cấu trúc câu.
-3. Truy cập và duyệt (traverse) cây phụ thuộc theo chương trình.
-4. Trích xuất thông tin có ý nghĩa từ các mối quan hệ phụ thuộc (ví dụ: tìm chủ ngữ, tân ngữ, bổ ngữ).
-
 ---
 
 ## Phần 1: Giới thiệu và Cài đặt
-
-Phân tích cú pháp phụ thuộc là một kỹ thuật nền tảng cho phép chúng ta hiểu cấu trúc ngữ pháp của câu dưới dạng các mối quan hệ **head** (điều khiển) và **dependent** (phụ thuộc). Trong bài thực hành này, chúng ta sẽ sử dụng **spaCy**, một thư viện NLP công nghiệp, để khám phá kỹ thuật này.
 
 ### Cài đặt
 
@@ -124,8 +114,6 @@ Câu 3:
 ---
 
 ## Phần 3: Truy cập các thành phần trong cây phụ thuộc
-
-Trực quan hóa rất hữu ích, nhưng sức mạnh thực sự đến từ việc truy cập cây phụ thuộc theo chương trình. Mỗi **Token** trong đối tượng **Doc** của spaCy chứa đầy đủ thông tin về vị trí của nó trong cây.
 
 Hãy phân tích các thuộc tính quan trọng của một token:
 
