@@ -37,11 +37,11 @@
 
 ### 4. Hình ảnh trực quan hóa embedding
 #### 4.1 PCA 2D từ GloVe
-![GloVe PCA 2D](images\GlovePCA_2D.png)
+![GloVe PCA 2D](../images/GlovePCA_2D.png)
 *Hình 1: Trực quan hóa PCA 2D của embedding GloVe*
 
 #### 4.2 Word Representation using PCA
-![Word Representation using PCA](images\WordRepresentationUsingPCA.png)
+![Word Representation using PCA](../images/WordRepresentationUsingPCA.png)
 *Hình 2: Biểu diễn các từ bằng PCA, vector arrows từ gốc tọa độ*
 
 
